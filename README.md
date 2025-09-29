@@ -20,7 +20,6 @@ The app is intentionally lightweight to work in the browser during development. 
 These commands assume PowerShell on Windows and that you're in the project root.
 
 ```powershell
-cd 'd:\Hoc_Tap\Di dong da nen tang\geo-note'
 npm install --legacy-peer-deps
 npm run dev
 ```
@@ -62,9 +61,6 @@ Be careful to match plugin versions to your installed Capacitor version and add 
 - The built-in routing draws straight-line polylines between points (useful for visual planning or simple direction markers).
 - For road-following routes (turn-by-turn), integrate a routing provider (OSRM, Mapbox Directions, GraphHopper, etc.). That requires either a routing server or an API key and additional code to fetch route geometry and draw it on the map.
 
-## Troubleshooting
-- If the dev server fails because `@capacitor/geolocation` or other native-only packages are imported but not installed, remove the import or install the package. The shipped code uses browser geolocation so the dev server should start without adding native plugins.
-- If geolocation fails in the browser, ensure you are using `http://localhost` or `https://` and that you allowed location access in the browser.
 
 ## Author
 - Name: Le Dinh Phuc
